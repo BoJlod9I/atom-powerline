@@ -1,13 +1,12 @@
 {
   "name": "powerline",
   "main": "./lib/powerline",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Powerline for Atom",
   "repository": "https://github.com/vidius/atom-powerline",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
