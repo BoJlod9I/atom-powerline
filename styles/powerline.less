@@ -1,0 +1,33 @@
+@import "ui-variables";
+@import "ui-mixins";
+
+@font-face {
+  font-family: "Powerline Symbols";
+  font-weight: normal;
+  font-style: normal;
+  src: url("atom://powerline/font/PowerlineSymbols.otf");
+}
+
+.powerline-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+power-line {
+  white-space: pre;
+  font-family: @font-family, "Powerline Symbols";
+  font-size: @font-size;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+  &[side="left"] {
+    float: left;
+  }
+
+  &[side="right"] {
+    float: right;
+  }
+}
+
+power-line::shadow > * {
+  display: inline-block;
+}
